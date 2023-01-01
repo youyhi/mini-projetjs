@@ -1,0 +1,104 @@
+<html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        .main {
+            width: 100%;
+            height: 600px;
+            background: url(https://images.pexels.com/photos/18105/pexels-photo.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-bottom: 1px solid rgb(197, 197, 197);
+            position: relative;
+        }
+
+
+        .main .main-content {
+            position: absolute;
+            width: 1500px;
+            height: 500px;
+            border-radius: 12px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #0000005e;
+        }
+
+        .main .main-content h1 {
+            text-align: center;
+            color: white;
+        }
+
+        #courses-container .row img {
+            max-width: 100%;
+        }
+
+        .course-image-wrapper {
+            height: 190px;
+            overflow: hidden;
+        }
+
+        .course-image-wrapper img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.html">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+
+        <div class="main-content d-flex flex-column justify-content-center align-items-center">
+            <h1>Ease(), Sleep(), Code(), Repeat()</h1>
+            <h3 class="text-center text-white mt-3">While You Are Alive</h3>
+            <a href="courses.html" style="font-size: 18px;" class="px-4 py-2 btn btn-info text-center mt-3 ">
+                Courses list 
+            </a>
+        </div>
+
+    </div>
+
+    <div id="courses-container" class="pb-5">
+        <h1 class="my-4 text-center">Courses</h1>
+        <div class="container d-flex flex-column align-items-center">
+            <div class="row">
+
+            <div class="col-4 p-3"><div class="course-image-wrapper"><img src="https://i.pinimg.com/736x/e1/7e/92/e17e9232b36eb1af308f385a7ea0dca5.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="HTML Attributes with examples | Webtags free tutorials | Understanding,  Development, Technical courses" data-noaft="1" style="width: 465px; height: 198.734px; margin: 0px;"></div><h5 class="mt-2 text-center">Javascript operators and conditions</h5><span class="d-block text-center">$69.9</span></div><div class="col-4 p-3"><div class="course-image-wrapper"><img src="https://phpforever.com/wp-content/uploads/2019/05/Crud-Application-Using-PHP-PostgreSQL.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="CRUD Example Using PHP OOPS And PostgreSQL" data-noaft="1" style="width: 465px; height: 310px; margin: 0px;"></div><h5 class="mt-2 text-center">javascript events</h5><span class="d-block text-center">$45.9</span></div><div class="col-4 p-3"><div class="course-image-wrapper"><img src="https://it.badykov.com/assets/img/blog/thumbs/types-of-css-selectors.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Types of CSS Selectors" data-noaft="1" style="width: 465px; height: 256.652px; margin: 0px;">
+</div><h5 class="mt-2 text-center">HTML elements and tags</h5><span class="d-block text-center">$19.9</span></div></div>
+            <a href="courses.html" style="font-size: 18px;" class="px-4 py-2 btn btn-info text-center mt-3 ">
+               All Courses 
+            </a>
+        </div>
+    </div>
+    <script src="dbCourses.js"></script>
+    <script src="index.js"></script>
+
+
+</body></html>
